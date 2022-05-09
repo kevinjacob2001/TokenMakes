@@ -7,3 +7,14 @@
 background: linear-gradient(90deg, rgba(10,12,73,1) 1%, rgba(196,60,124,1) 100%);
 
     }
+
+    
+.box2 {
+    margin: 0 auto;
+
+    height: 4rem;
+    background: rgba(16,18,27,0.4);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+  }

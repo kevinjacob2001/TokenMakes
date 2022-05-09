@@ -5,28 +5,28 @@ import Component1 from './Component1.png'
 
 function LeftSidebar() {
     return (
-        <div className="flex-col border-r-[.6px] border-gray-800 flex-[0.25]  pt-5  pl-8 pr-16  justify-between relative">
+        <div className="flex-col border-r-[.6px] border-gray-800  flex-[0.1] p-5 md:flex-[0.25]  md:pt-5  md:pl-8  justify-between relative">
 
 
             <div className=" ">
-                <Image height="60" width="130" src="https://www.logo.wine/a/logo/Google/Google-Logo.wine.svg" />
+           
                 {/*Marketplace*/}
                 <div className="space-y-8 font-semibold mt-5">
-                    <h4 className="text-[#96375F] font-bold text-xs tracking-[.3rem]  pb-3">MARKETPLACE</h4>
-                    <div className="flex items-center space-x-2"><HomeIcon className="w-7" /> <h1 className="">Market</h1></div>
-                    <div className="flex items-center space-x-2"><ChartBarIcon className="w-7" /> <h1 className="">Active Bid</h1></div>
-                    <div className="flex items-center space-x-2"><HeartIcon className="w-7" /> <h1 className="">Saved</h1></div>
+                    <h4 className="hidden md:block text-[#96375F] font-bold text-xs tracking-[.3rem]  pb-3">MARKETPLACE</h4>
+                    <div className="flex items-center space-x-2"><HomeIcon className="w-7" /> <h1 className="hidden md:block">Market</h1></div>
+                    <div className="flex items-center space-x-2"><ChartBarIcon className="w-7" /> <h1 className="hidden md:block">Active Bid</h1></div>
+                    <div className="flex items-center space-x-2"><HeartIcon className="w-7" /> <h1 className="hidden md:block">Saved</h1></div>
 
                 </div>
 
                 {/*Account*/}
                 <div className="space-y-8 mt-6 font-semibold">
-                    <h4 className="text-[#96375F] font-bold text-xs tracking-[.3rem] pb-3">ACCOUNT</h4>
+                    <h4 className="hidden md:block text-[#96375F] font-bold text-xs tracking-[.3rem] pb-1">ACCOUNT</h4>
 
-                    <div className="flex items-center space-x-2"><DatabaseIcon className="w-7" /> <h1 className="">My Collection</h1></div>
-                    <div className="flex items-center space-x-2"><CashIcon className="w-7" /> <h1 className="">Wallet</h1></div>
-                    <div className="flex items-center space-x-2"><ClockIcon className="w-7" /> <h1 className="">History</h1></div>
-                    <div className="flex items-center space-x-2"><CogIcon className="w-7" /> <h1 className="">Settings</h1></div>
+                    <div className="flex items-center space-x-2"><DatabaseIcon className="w-7" /> <h1 className="hidden md:block">My Collection</h1></div>
+                    <div className="flex items-center space-x-2"><CashIcon className="w-7" /> <h1 className="hidden md:block">Wallet</h1></div>
+                    <div className="flex items-center space-x-2"><ClockIcon className="w-7" /> <h1 className="hidden md:block">History</h1></div>
+                    <div className="flex items-center space-x-2"><CogIcon className="w-7" /> <h1 className="hidden md:block">Settings</h1></div>
 
                 </div>
             </div>

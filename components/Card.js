@@ -27,9 +27,15 @@ function Card() {
   return (
     <>
     {data.map((ele)=>(
-        <a href="#" class="block p-2 max-w-sm bg-white rounded-lg  shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <a href="#" class="relative block p-2 max-w-sm bg-white rounded-lg  shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
         <img src={ele.imgSrc} className="object-cover rounded-lg h-48 w-96 ..." />
-        <div className="flex items-center space-x-1 p-3 pb-2"><h1 class="text-xs text-white">Artwork by</h1>       <h4 className="text-[#96375F] font-bold  text-xs ">{ele.name}</h4></div>
+        <div className=" items-center flex justify-center">
+        <div className="w-52 md:w-32 box2 absolute bottom-16 text-white p-2">
+            <h1 className="font-semibold">Spiralie</h1>
+            <h1 className="text-xs">Current bid <span>4.06 ETH</span></h1>
+        </div>
+        </div>
+        <div className="flex items-center space-x-1 p-3 pb-2"><h1 class="text-xs text-white">Artwork by</h1><h4 className="text-[#96375F] font-bold  text-xs ">{ele.name}</h4></div>
         </a>
 
     ))}
