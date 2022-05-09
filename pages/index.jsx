@@ -5,26 +5,23 @@ import Main from '../components/Main'
 
 function Home() {
   return (
-    <div className="flex   bg-[#1C1E2A]">
+    <div className="flex bg-[#1C1E2A] overflow-y-auto">
       <Head>
         <title>Home</title>
       </Head>
 
-      <main className='text-gray-400 flex h-screen'>
+      <main className='text-gray-400 flex  w-screen '>
         {/*LeftSidebar*/}
         <LeftSidebar />
 
 
         {/* <Main />*/}
-
         <Main />
 
-     
-        
+
+
         {/*<RightSidebar /> */}
         <RightSidebar />
-  
-
       </main>
 
     </div>
