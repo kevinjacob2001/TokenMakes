@@ -27,7 +27,7 @@ function Main() {
         </div>
       </div>
 
-      <div class="grid mt-3 grid-cols-2 md:grid-cols-3 gap-5 ">
+      <div class="grid mt-3 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 ">
 
         <Card />
         <Card />
